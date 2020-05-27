@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - This oppgave - </title>
+</head>
+<body>
+<style>
+ table, td{
+   /* margin:20px; */
+   padding:10px ;
+   font-size:    30px; 
+    
+ }
+ td{border:solid black 1px;}
+ p{
+ color: aquamarine;
+
+ }
+div{
+color: blue; 
+
+}
+#div2 {
+   color: brown;
+
+}
+
+</style>    
+<div>    
+   Dette er en text.
+
+
+</div>
+<div id="div2">    
+    Dette er en text 2.
+ 
+ 
+ </div>
+
+
+
+
+<p>  Ferdighet 3 - spesialtilfelle, this og gjøre noe med det elementet man trykker på (eller som utløser eventet)</p>
+    Samenlign dette eksempelet med "Ferdighet 2 - Onclick - kjøre funksjon som endrer innerHTML ut fra Id"!
+    <!--<h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>
+    <h2 onmouseover="Shallois(this)"> <table><tr><td>0</td></table>  </h2>-->
+    <table>   
+        <tr>
+            <td onmouseover="Shallois(this)"> 0 </td>
+            
+            <td onmouseover="Shallois(this)"> 0 </td>
+            
+            <td onmouseover="Shallois(this)"> 0 </td>        
+        </tr>
+        <tr>
+            <td onmouseover="Shallois(this)"> 0 </td>
+            
+            <td onmouseover="Shallois(this)"> 0 </td>
+            
+            <td onmouseover="Shallois(this)"> 0 </td>        
+        </tr>
+        <tr>
+            <td onmouseover="Shallois(this)"> 0 </td>
+            
+            <td onmouseover="Shallois(this)"> 0 </td>
+            
+            <td onmouseover="Shallois(this)"> 0 </td>        
+        </tr>
+    </table>
+    
+    
+    <script>
+        function Shallois(snazzy) {
+            // Nå er etNavnDuVelgerSelv det samme som om vi hadde kjørt:
+            // var etNavnDuVelgerSelv = document.getElementById('z');
+            // eller
+            // var etNavnDuVelgerSelv = document.getElementById('y');
+            // HVIS og bare hvis du trykker på akkurat det elementet som har id=z
+            snazzy.innerHTML = 'X';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
