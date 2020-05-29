@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Variabler! -</title>
+<style>
+
+.Crock{
+   float:left
+   
+
+}
+.First{
+   clear: left;
+
+
+}
+
+</style>
+
+
+</head>
+<body>
+    <p>Ferdighet 4 - Variabel utenfor funksjon og innenfor funksjon, samt sette sammen tekst av flere deler</p>
+    <div>
+    <button class="Crock First" onclick="tell(this)">1</button>
+    <button class="Crock"       onclick="tell(this)">2</button>
+    <button class="Crock"       onclick="tell(this)">3</button>
+    <button class="Crock First" onclick="tell(this)">4</button>
+    <button class="Crock"       onclick="tell(this)">5</button>
+    <button class="Crock"       onclick="tell(this)">6</button>
+    <button class="Crock First" onclick="tell(this)">7</button>
+    <button class="Crock"       onclick="tell(this)">8</button>
+    <button class="Crock"       onclick="tell(this)">9</button>
+    </div><br>
+    <div><button  class="crock first"onclick="resetknapp()">reset</button>
+         <button                     onclick="openlock()">open</button>
+    </div>
+    <p> Koden er: 1989 </p>
+    
+    
+    
+    <div id="Shallois">- Kodelås -</div>
+    <div id="kode"></div>
+    <script>
+       var korrekt="1989";
+       var midlertidig="";
+       function tell(hvajegvil){
+           document.getElementById( "kode" ).innerHTML+= hvajegvil.innerHTML;
+           midlertidig=document.getElementById("kode").innerHTML;
+           //   0     =   2
+       }
+       function openlock(){
+           if(!midlertidig.startsWith(korrekt)){
+
+               alert("Feilkode");
+           }
+          else{
+           alert("korrektkode");
+
+          }              
+       
+         
+       }
+       function resetknapp(){
+            midlertidig="";
+            document.getElementById("kode").innerHTML ="";
+
+
+       }     
+
+
+
+
+    </script>
+
+</body>
+</html>
